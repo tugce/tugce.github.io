@@ -1,15 +1,15 @@
-#Site settings
+# Site settings
 title: Bir Bilgisayar Çaylağının Günlüğü
-tagline: -
+tagline: 
 email: ztugcesirin@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Merhaba, ben Tuğçe. Bir yıldır Certified Force.com Developer olarak
-   Salesforce platformu üzerinde yazılım geliştiriyorum.
+  Certified Force.com Developer
+  Junior Linux System Administrator
 baseurl: "/gaya" # the subpath of your site, e.g. /blog/
-url: "http://ztugcesirin.com" # the base hostname & protocol for your site
+url: "http://ztugcesirin.github.io" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
-author: "Tuğçe Şirin"
-author_thumbnail: "/assets/images/tugce.jpeg" # Author avatar
+author: "Tom Warlker"
+author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
 # Theme customization - please change from the defaults!
 theme:
   # Color for sidebar bar, links, etc
@@ -20,6 +20,8 @@ theme:
     twitter: ztugcesirin
     facebook: ztugcesirin
     gplus: +ztugcesirin
+    # dribble: gayanvirajith
+    # pinterest: gayanvirajith
 
   # Enable share buttons on post footer
   show_share_buttons: true
