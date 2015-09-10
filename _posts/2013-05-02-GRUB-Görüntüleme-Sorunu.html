@@ -1,0 +1,9 @@
+---           
+layout: post
+title: GRUB Görüntüleme Sorunu
+date: 2013-05-02 14:44:49 UTC
+updated: 2013-05-02 14:44:49 UTC
+comments: false
+categories: grub linux ubuntu
+---
+Eski bilgisayarımda sadece Ubuntu kullandığım için (en azından ben öyle olduğunu düşünüyorum) açılışta GRUB ekranı gelmiyordu. Bu benim için sorun olmanın ötesinde iyi bir şeydi kerneller arası geçiş yapmam gerekene kadar. grub.cfg dosyasını düzenleyeyim falan dedim her şey yolundaydı. Sonra google'a en kaba tabirler "Haci i can't see grub, what will i do?" dedim kendisi sağolsun beni hiç kırmaz hemen yanıtı gösterdi.<br /><br />/etc/default/grub da<br /><br />GRUB_HIDDEN_TIMEOUT=0<br />GRUB_HIDDEN_TIMEOUT_QUIET=true<br /><br />olan kısmı<br /><br /><br />GRUB_HIDDEN_TIMEOUT=10<br />GRUB_HIDDEN_TIMEOUT_QUIET=false<br /><br />şu şekilde değiştirmek gerekiyor. Beni en başta ya neden açılmıyor ama bu diye üzmüştü, kolay bir çözümü olduğu için affettik kendisini.<br /><br />Bu çözüm için root olmanız gerek ayrıca.

@@ -1,0 +1,9 @@
+---           
+layout: post
+title: Chef Authenticate Hatası ve Çözümü
+date: 2013-08-22 12:14:44 UTC
+updated: 2013-08-22 12:14:44 UTC
+comments: false
+categories: authentication error chef hata raporu node staj
+---
+Stajda chef ile uğraşıyorum. Chef'in ne olduğunu bir ara anlatırım ama şu an chef'te karşılaştığım bir sorunu nasıl çözdüğümü anlatacağım. chef-client komutunu her girdiğimde şöyle bir hata alıyordum.<br /><br /><blockquote class="tr_bq">Authentication Error:<br />---------------------<br />Failed to authenticate to the chef server (http 401).<br /><br /><br /><br />Server Response:<br />----------------<br />Failed to authenticate as 'node adı'. Ensure that your node_name and client key are correct.<br /><br /><br />Relevant Config Settings:<br />-------------------------<br />chef_server_url&nbsp;&nbsp; "url var burada"<br />node_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "node adı"<br />client_key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "/etc/chef/client.pem"<br /><br />If these settings are correct, your client_key may be invalid.</blockquote><br />Bu hata beni baya uğraştırdı doğrusu. Sorunun çözümü opscode'un sitesinde varmış. Aslında hata raporu da çok açık bir şekilde hatayı söylüyor. Bütün ayarlar doğruysa client._key yanlış pampa diyor. Ama ben inatla "o yanlış olamaz başka bi yerde yamukluk var" diye başka ayarları kurcalıyordum. Gerçekten de client.pem yanlış olduğu için authenticate denilen olay gerçekleşmiyormuş. Bunu düzeltmek için<br /><br />knife node delete node adı<br />knife client delet client adı<br />rm /etc/chef/client.pem<br /><br />ile bunları çıkarıp chef-client komutunu çalıştırıyoruz. Bu doğru client.pem dosyasını otomatik olarak /etc/chef konumunun altına yerleştiriyor.<br /><br />Hata raporlarını okumak gerçekten çok önemli. Sonra hata raporu gözünün önünde dururken "ya ama bu neden çalışmıyor :((((" durumuna düşmezsiniz.

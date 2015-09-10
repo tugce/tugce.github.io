@@ -1,0 +1,9 @@
+---           
+layout: post
+title: sudo apt-get update sorunu ve çözümü
+date: 2013-03-24 22:17:23 UTC
+updated: 2013-03-24 22:17:23 UTC
+comments: false
+categories: konsol sudo apt-get update ubuntu
+---
+Konsoldaki hata mesajı çıktılarını dikkatli bir şekilde okumamak büyük bir sıkıntı. Aylardır sürekli hata veren sudo apt-get update komutunda aşağıdaki hatayı alıp duruyordum, google'da aradığımda çıkan tüm yanıtları denedim ama nedense bir türlü sorunu çözememiştim. Bugün aklıma geldi tekrardan ve yeniden deneyip daha dikkatli bir şekilde arattım sorunu. Yanıtı çok basitti o sebeple "ben aylardır bunu çözemedim mi yani" diye bir sessizlik anı yaşamadım değil.<br /><br /><i>W: Failed to fetch cdrom://[Debian GNU/Linux 6.0.5 _Squeeze_ - Official Multi-architecture amd64/i386 NETINST #1 20120512-20:52]/dists/squeeze/main/binary-i386/Packages&nbsp; Please use apt-cdrom to make this CD-ROM recognized by APT. apt-get update cannot be used to add new CD-ROMs<br /><br />E: Some index files failed to download. They have been ignored, or old ones used instead.</i><br /><br /><br /><br />Görüldüğü gibi orada kocaman CD-ROM yazıyor, bense CD-ROM ne alaka diyerek hep atlıyordum. Sonuç olarak çözüm&nbsp; şu şekilde oluyormuş<br /><br /><pre><code>&nbsp;</code></pre><pre><code>cd /etc/apt<br />sudo cp sources.list sources.list.old<br />gksu gedit sources.list</code></pre><br /><br />Burada içinde CD-ROM geçen satırı / satırları kaldırınca sorun çözülüyor. Benim gibi bakar-kör insanlar için hayat bazen çok zor olabiliyor.<br />

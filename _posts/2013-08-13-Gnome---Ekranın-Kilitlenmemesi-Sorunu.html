@@ -1,0 +1,9 @@
+---           
+layout: post
+title: Gnome - Ekranın Kilitlenmemesi Sorunu
+date: 2013-08-13 10:59:35 UTC
+updated: 2013-08-13 10:59:35 UTC
+comments: false
+categories: disable-lock-screen ekran kilitleme gnome gnome-screensaver
+---
+Merhabalar<br /><br />Staja başladığım gün aldığım bilgisayarda ekranı bir türlü kilitleyemiyordum. Çalışma ortamında (hatta herhangi bir yerde) bilgisayarınızdan ekranı kilitlemeden uzaklaşırsanız bütün ofise baklava ısmarlamak, sosyal medya hesaplarınızda bir şeyler paylaşılmak gibi yan etkilerle karşılaşabilirsiniz. O sebeple ekranı kilitlemem önemliydi. Hemen internette soruna baktım. Benim için şöyle basit bir adımda çözüldü.<br /><br /><i>gsettings set org.gnome.desktop.lockdown disable-lock-screen 'false'</i><br /><br />Ayarlarda ekran kilitlemenin devredışı bırakılmasını 'false' yapmak gerekiyormuş yani. Ekranı kilitleyebilmek için lazım olan en önemli şey ise gnome-screensaver. Eğer bu kurulu değilse üstteki komutu çalıştıramazsınız. Onu kurmak için;<br /><br /><i>sudo apt-get install gnome-screensaver</i><br /><br />Ekranı kilitlemek için&nbsp; CTRL+ALT+L tuş kombinasyonunu kullanabilirsiniz. Bir kenarda durmasının bir zararı yok bu konunun herhalde. :)
