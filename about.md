@@ -6,15 +6,13 @@ banner_image: sample-banner-image-2.jpg
 banner_image_alt: About me
 ---
 
-Hi, I am Tom Warlker. I am a professional UI/UX designrer and web developer. I love being minimal and creative.
+Merhaba! Benim adım Tuğçe. 2015 ÇOMÜ Bilgisayar Mühendisliği mezunuyum. Linux (şu sıralar Elementary OS) kullanıyorum. 
 
-I prefer to serve with Php and Ruby based stacks and also love to work 
-on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
+Bir yıldır Salesforce platformu üzerinde yazılım geliştiriyorum. Blogumda Linux, Salesforce ve günlük hayatımda karşılaştığım şeylerle ilgili yazılar bulabilirsiniz.
 
-### Contact me
+### İletişim
 
-Say `Hello` at gayanvirajith@gmail.com or find
-me on
+ztugcesirin@gmail.com adresinden bana ulaşabilirsiniz.
 
 ---
 
