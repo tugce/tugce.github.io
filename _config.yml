@@ -1,27 +1,27 @@
-# Site settings
-title: Bir Bilgisayar Çaylağının Günlüğü
-tagline: 
-email: ztugcesirin@gmail.com
+ite settings
+title: Your awesome title
+tagline: And Tagline
+email: gayanvirajith@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Merhaba, benim adım Tuğçe. Yeni mezun bir bilgisayar mühendisiyim.
-  Bir yıldır Salesforce platformunda yazılım geliştiriyorum.
+  Hi, I’m a professional UI/UX designrer and web developer. 
+  I love being minimal and creative.
 baseurl: "/gaya" # the subpath of your site, e.g. /blog/
-url: "http://http://gayan.me" # the base hostname & protocol for your site
+url: "http://gayan.me" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
-author: "Tuğçe Şirin"
-author_thumbnail: "/assets/images/tugce.jpeg" # Author avatar
+author: "Tom Warlker"
+author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
 # Theme customization - please change from the defaults!
 theme:
   # Color for sidebar bar, links, etc
   highlight_color: "#205081" #205081" # "#272935"
   # Social media links, leave blank to ignore
   social: 
-    github: ztugcesirin
-    twitter: ztugcesirin
-    facebook: ztugcesirin
-    gplus: +ztugcesirin
+    github: gayanvirajith
+    twitter: gayanvirajith
+    facebook: gayanvirajith
+    gplus: +gayanvirajith
     # dribble: gayanvirajith
-    pinterest: 
+    pinterest: gayanvirajith
 
   # Enable share buttons on post footer
   show_share_buttons: true
