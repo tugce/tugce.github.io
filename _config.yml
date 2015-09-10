@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Merhaba, benim adım Tuğçe. Yeni mezun bir bilgisayar mühendisiyim.
   Bir yıldır Salesforce platformunda yazılım geliştiriyorum.
 baseurl: "/gaya" # the subpath of your site, e.g. /blog/
-url: "http://ztugcesirin.com" # the base hostname & protocol for your site
+url: "http://http://gayan.me" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Tuğçe Şirin"
 author_thumbnail: "/assets/images/tugce.jpeg" # Author avatar
