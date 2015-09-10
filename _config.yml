@@ -5,7 +5,7 @@ email: ztugcesirin@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Certified Force.com Developer
   Junior Linux System Administrator
-baseurl: "/gaya" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ztugcesirin.github.io" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Tom Warlker"
