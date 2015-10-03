@@ -14,13 +14,13 @@ Uyarı: Codecademy de öğrendiğim sırayla anlatıyorum, daha fazla detay içi
 
 Standart bir AngularJS dizini şöyle bir şey
 
-->css/ <br></br>
-->img/ <br></br>
-->js/ <br></br>
- -->controllers/ <br></br>
- -->shared/ <br></br>
- -->app.js <br></br>
-->index.html <br></br>
+->css/ <br>
+->img/ <br>
+->js/ <br>
+ -->controllers/ <br>
+ -->shared/ <br>
+ -->app.js <br>
+->index.html <br>
 
 Bir AngularJS uygulaması oluştururken standart akış ise şöyle.
 
@@ -77,7 +77,7 @@ Daha fazla filtre için şuraya bakabilirsiniz: https://docs.angularjs.org/api/n
 
 Şimdi neler öğrendik?
 
-Modül (app.js de tanımladığımız) Angular uygulamasının farklı bileşenlerini içerir <br></br>
-Controller uygulamanın verilerini yönetir <br></br>
-Expression sayfada verileri göstermeyi sağlar <br></br>
-Filtre expressiondan gelen değerin formatını (biçimini) düzeltir. <br></br>
+Modül (app.js de tanımladığımız) Angular uygulamasının farklı bileşenlerini içerir <br>
+Controller uygulamanın verilerini yönetir <br>
+Expression sayfada verileri göstermeyi sağlar <br>
+Filtre expressiondan gelen değerin formatını (biçimini) düzeltir. <br>
