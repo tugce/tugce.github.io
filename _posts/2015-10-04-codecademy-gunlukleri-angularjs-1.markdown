@@ -32,9 +32,9 @@ var app = angular.module("myApp", []);
 {% endhighlight %}
 
 index.html içinde
-{% raw %}
+{% highlight html %}
 <body ng-app="myApp"></body>
-{% endraw %}
+{% endhighlight %}
 2.controllers klasörü içinde controller oluştur ve ng-controller direktifi ile controllerın scope unu belirle
 
 js/controllers içinde
@@ -47,34 +47,32 @@ app.controller('MainController', ['$scope', function($scope){
 }]);
 {% endhighlight %}
 index.html
-{% raw %}
+{% highlight html %}
 <div class="main" ng-controller="MainController">
 </div> <!-- main -->
-{% endraw %}
+{% endhighlight %}
 3.controllerda scope değişkenine veri ekle ve bu veriyi expressionlar ile sayfada göster
 
 scope değişkenine veri ekleme bir üstte var onu sayfada gösterme şekli ise şöyle
 
 index.html
-{% raw %}
+{% highlight html %}
 <h1>{{ title }}</h1> <!-- bu Salesforce Test  yazacak sayfaya--> 
-{% endraw %}
+{% endhighlight %}
 Bir obje oluşturmak için 
-{% raw %}
+{% highlight html %}
 $scope.objeadı = {field1: "deneme", field2 = 23};
 
 {{ objeadı.field1 }} <!-- bu deneme yazısını gösteriyor -->
-{% endraw %}
+{% endhighlight %}
 AngularJS de filtreler var. (Bu bile yenmiyor. Pes!) Mesela integer sayıyı para birimi olarak göstermek için;
-{% raw %}
-{{ objeadı.field2 | currency }}
-{% endraw %}
+{% highlight html %}
+{{ objeadı.field2 \| currency }}
+{% endhighlight %}
 Angular filtreleri şu şekilde çalışıyor.
 
 1. objeadı.field2 deki değeri alıyor. <br>
-{% raw %}
-2. Sayıyı currency filtresine gönderiyor. Pipe sembolü ( | ) Linux konsol kullanan arkadaşların aşina olduğu bir şey. Görevi aynısı inputu alıp diğer tarafa gönderiyor. <br>
-{% endraw %} 
+2. Sayıyı currency filtresine gönderiyor. Pipe sembolü {% highlight html %}( \| ){% endhighlight %} Linux konsol kullanan arkadaşların aşina olduğu bir şey. Görevi aynısı inputu alıp diğer tarafa gönderiyor. <br>
 3. Filtre dolar işaretini ve uygun ondalıklı kısmı yerleştiriyor. <br>
 
 Daha fazla filtre için şuraya bakabilirsiniz: <a href="https://docs.angularjs.org/api/ng/filter">Filtreler</a>
