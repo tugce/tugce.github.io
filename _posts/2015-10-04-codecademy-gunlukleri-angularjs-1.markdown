@@ -8,9 +8,9 @@ Merhaba,
 
 Bu bir yazı dizisi olacak ve ilk yazım. Codecademy'de AngularJS öğreniyorum ve bunu ilerde Salesforce ile bağlayacağım. İşin ucu mobile bile bağlanabilir. Bakalım, fingers crossed! 
 
-Uyarı: Codecademy de öğrendiğim sırayla anlatıyorum, daha fazla detay için İngilizceniz iyiyse oradaki kursu tavsiye ederim.
+<b>Uyarı:</b> Codecademy de öğrendiğim sırayla anlatıyorum, daha fazla detay için İngilizceniz iyiyse oradaki kursu tavsiye ederim.
 
-Öncelikle AngularJs nedir? Yenir mi? Ona bir bakalım. Üzülerek söylüyorum ki AngularJS yenmiyor. Evet. Bu lanet yenmeyen şey bir javascript frameworkü ve web uygulamalarını kolayca yapmayı ve kontrol etmeyi sağlar. (mış, öyle dediler bana.)
+Öncelikle AngularJS nedir? Yenir mi? Ona bir bakalım. Üzülerek söylüyorum ki AngularJS yenmiyor. Evet. Bu lanet yenmeyen şey bir javascript frameworkü ve web uygulamalarını kolayca yapmayı ve kontrol etmeyi sağlar. (mış, öyle dediler bana.)
 
 Standart bir AngularJS dizini şöyle bir şey
 
@@ -71,11 +71,13 @@ AngularJS de filtreler var. (Bu bile yenmiyor. Pes!) Mesela integer sayıyı par
 {% endraw %}
 Angular filtreleri şu şekilde çalışıyor.
 
-1. objeadı.field2 deki değeri alıyor. <br></br>
-2. Sayıyı currency filtresine gönderiyor. Pipe sembolü {% raw %}( | ){% endraw %} Linux konsol kullanan arkadaşların aşina olduğu bir şey. Görevi aynısı inputu alıp diğer tarafa gönderiyor. <br></br>
-3. Filtre dolar işaretini ve uygun ondalıklı kısmı yerleştiriyor. <br></br>
+1. objeadı.field2 deki değeri alıyor. <br>
+{% raw %}
+2. Sayıyı currency filtresine gönderiyor. Pipe sembolü ( | ) Linux konsol kullanan arkadaşların aşina olduğu bir şey. Görevi aynısı inputu alıp diğer tarafa gönderiyor. <br>
+{% endraw %} 
+3. Filtre dolar işaretini ve uygun ondalıklı kısmı yerleştiriyor. <br>
 
-Daha fazla filtre için şuraya bakabilirsiniz: https://docs.angularjs.org/api/ng/filter
+Daha fazla filtre için şuraya bakabilirsiniz: <a href="https://docs.angularjs.org/api/ng/filter">Filtreler</a>
 
 Şimdi neler öğrendik?
 
