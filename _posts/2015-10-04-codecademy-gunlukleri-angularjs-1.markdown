@@ -56,14 +56,16 @@ index.html
 scope değişkenine veri ekleme bir üstte var onu sayfada gösterme şekli ise şöyle
 
 index.html
-{% highlight html %}
+{% raw %}
 <h4>{{ title }}</h4> <!-- bu Salesforce Test  yazacak sayfaya--> 
-{% endhighlight %}
+{% endraw %}
 Bir obje oluşturmak için 
 {% highlight html %}
 $scope.objeadı = {field1: "deneme", field2 = 23};
-<h4>{{ objeadı.field1 }}</h4> <!-- bu deneme yazısını gösteriyor -->
 {% endhighlight %}
+{% raw %}
+<h4>{{ objeadı.field1 }}</h4> <!-- bu deneme yazısını gösteriyor -->
+{% endraw %}
 AngularJS de filtreler var. (Bu bile yenmiyor. Pes!) Mesela integer sayıyı para birimi olarak göstermek için;
 {% highlight html %}
 {{ objeadı.field2 \| currency }}
