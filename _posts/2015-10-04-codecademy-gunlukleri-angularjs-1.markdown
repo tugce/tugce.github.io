@@ -59,10 +59,12 @@ index.html
 {% raw %}
 <h1>{{ title }}</h1> <!-- bu Salesforce Test  yazacak sayfaya--> 
 {% endraw %}
-Bir obje oluşturmak için $scope.objeadı = {field1: "deneme", field2 = 23};
+Bir obje oluşturmak için 
+{% raw %}
+$scope.objeadı = {field1: "deneme", field2 = 23};
 
 {{ objeadı.field1 }} <!-- bu deneme yazısını gösteriyor -->
-
+{% endraw %}
 AngularJS de filtreler var. (Bu bile yenmiyor. Pes!) Mesela integer sayıyı para birimi olarak göstermek için;
 {% raw %}
 {{ objeadı.field2 | currency }}
