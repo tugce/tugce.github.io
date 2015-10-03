@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "Codecademy Günlükleri: AngularJS (1)"
 date:   2015-10-04 01:00:00
