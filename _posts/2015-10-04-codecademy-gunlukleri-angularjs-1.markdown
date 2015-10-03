@@ -57,13 +57,12 @@ scope değişkenine veri ekleme bir üstte var onu sayfada gösterme şekli ise 
 
 index.html
 {% highlight html %}
-<h1>{{ title }}</h1> <!-- bu Salesforce Test  yazacak sayfaya--> 
+<h4>{{ title }}</h4> <!-- bu Salesforce Test  yazacak sayfaya--> 
 {% endhighlight %}
 Bir obje oluşturmak için 
 {% highlight html %}
 $scope.objeadı = {field1: "deneme", field2 = 23};
-
-{{ objeadı.field1 }} <!-- bu deneme yazısını gösteriyor -->
+<h4>{{ objeadı.field1 }}</h4> <!-- bu deneme yazısını gösteriyor -->
 {% endhighlight %}
 AngularJS de filtreler var. (Bu bile yenmiyor. Pes!) Mesela integer sayıyı para birimi olarak göstermek için;
 {% highlight html %}
@@ -72,7 +71,7 @@ AngularJS de filtreler var. (Bu bile yenmiyor. Pes!) Mesela integer sayıyı par
 Angular filtreleri şu şekilde çalışıyor.
 
 1. objeadı.field2 deki değeri alıyor. <br>
-2. Sayıyı currency filtresine gönderiyor. Pipe sembolü {% highlight html %}( \| ){% endhighlight %} Linux konsol kullanan arkadaşların aşina olduğu bir şey. Görevi aynısı inputu alıp diğer tarafa gönderiyor. <br>
+2. Sayıyı currency filtresine gönderiyor. Pipe sembolü ( \| )Linux konsol kullanan arkadaşların aşina olduğu bir şey. Görevi aynısı inputu alıp diğer tarafa gönderiyor. <br>
 3. Filtre dolar işaretini ve uygun ondalıklı kısmı yerleştiriyor. <br>
 
 Daha fazla filtre için şuraya bakabilirsiniz: <a href="https://docs.angularjs.org/api/ng/filter">Filtreler</a>
