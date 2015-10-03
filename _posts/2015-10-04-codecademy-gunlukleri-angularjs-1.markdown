@@ -67,9 +67,9 @@ $scope.objeadı = {field1: "deneme", field2 = 23};
 <h4>{{ objeadı.field1 }}</h4> <!-- bu deneme yazısını gösteriyor -->
 {% endraw %}
 AngularJS de filtreler var. (Bu bile yenmiyor. Pes!) Mesela integer sayıyı para birimi olarak göstermek için;
-{% highlight html %}
+{% raw %}
 {{ objeadı.field2 \| currency }}
-{% endhighlight %}
+{% endraw %}
 Angular filtreleri şu şekilde çalışıyor.
 
 1. objeadı.field2 deki değeri alıyor. <br>
