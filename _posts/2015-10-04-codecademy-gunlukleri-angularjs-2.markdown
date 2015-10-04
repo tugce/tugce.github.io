@@ -6,7 +6,7 @@ categories: codecademy angularjs angular salesforce
 ---
 Merhaba,
 
-Geçen <a href="http://ztugcesirin.com/codecademy/angularjs/angular/salesforce/2015/10/04/codecademy-gunlukleri-angularjs-1">yazımda</a>AngularJS ye bir giriş yapmıştım. Şimdi devam edelim. En son verileri sayfada gösterebiliyorduk. Diyelim birden fazla veriyi göstermemiz gerekti. Onu nasıl yapacağız? Şöyle ki;
+Geçen <a href="http://ztugcesirin.com/codecademy/angularjs/angular/salesforce/2015/10/04/codecademy-gunlukleri-angularjs-1">yazımda</a> AngularJS ye bir giriş yapmıştım. Şimdi devam edelim. En son verileri sayfada gösterebiliyorduk. Diyelim birden fazla veriyi göstermemiz gerekti. Onu nasıl yapacağız? Şöyle ki;
 
 MainController.js
 {% highlight javascript %}
