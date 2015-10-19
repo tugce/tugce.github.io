@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Basit Bir Django Uygulaması (1)"
-date:   2015-10-19 23:00:00
+date:   2015-10-19 22:22:00
 categories: python django coding
 ---
 
