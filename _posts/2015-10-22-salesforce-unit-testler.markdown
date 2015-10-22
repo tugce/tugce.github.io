@@ -2,6 +2,7 @@
 layout: post
 title:  "Salesforce Unit Test Yazımı - Salesforce (1)"
 date:   2015-10-22 00:01:00
+comments: true
 categories: salesforce apex unittests test
 ---
 Yaklaşık 1,5 yıldır Force.com Developer olarak çalışıyorum. Salesforce nedir ne değildir başka bir yazımda anlatacağım. Salesforce konusunda pek Türkçe kaynak bulunmadığı için bir yerlerden ben başlayayım diye düşündüm. Peki neden testlerden başlıyorum. Bu çok iyi bir soru. -Tebrik ediyorum sizi böyle güzel bir soru için.- Hemen yanıt vereyim. Salesforce production ortamına kodları aktarmak için en az %75 code coverage dediğimiz kodların üzerinden geçilmesi olayını zorunlu tutmuş. Bugüne kadar çoğu zaman aman şu code coverage tutsun da başka şey istemem diye aslında test sayılmayan çok fazla test yazmışlığım var. Çünkü Salesforce hızlı geliştirme yapılabilmesi ile önemli ve test yazmayı zaman kaybı olarak görüyordum. -Tamam vurmayın.-
@@ -36,3 +37,26 @@ Bunlar dışında test sınıfları ile ilgili birkaç ufak bilgi vereyim.<br>
 ->Test sınıfları üçüncü parti web servislerine çağrı yapmazlar. Bunun için WebServiceMock sınıfını kullanmak gerekir.
 
 Şimdilik testlerle ilgili bahsedeceklerim bu kadar. İlerleyen günlerde testlerde dahil olmak üzere daha ayrıntılı yazılara devam edeceğim.
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//ztugcesirincom.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
