@@ -67,6 +67,8 @@ trigger UpdateTest on Account (before insert, before update) {
 {% endhighlight %}
 
 isInsert, isUpdate, isDelete, isBefore, isAfter bizim tek bir triggerda farklı koşullar için işlemler yapabilmemizi sağlar. Salesforce'ta trigger yazımı kısa böyle. Daha detaylı öğrenmek isteyen arkadaşları <a href="https://developer.salesforce.com/trailhead">Trailhead</a> e davet ediyorum. Trailhead, aynı Codecademy gibi adım adım ilerleyerek öğrenmeyi sağlayan bir araç. (Codecademy ne diye sormayın n'olursunuz...) İlgileniyorsanız bakmanızı tavsiye ederim.
+
+
 <div id="disqus_thread"></div>
 <script>
     /**
