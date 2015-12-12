@@ -6,7 +6,7 @@ comments: true
 categories: salesforce apex
 ---
 
-Bugün Apex'in temellerini anlatacağım. Apex Salesforce'da kullanılan Java benzeri bir programlama dilidir. Sistem olaylarına business logic eklenmesini sağlar. Bunlar butona basma, insert/update edilen kayıtlarla ilgili olylar ya da Visualforce sayfaları olabilir. Apex Force.com platformunda yani sunucu tarafında kaydedilir, derlenir ve çalıştırılır. NEsneye yöneliktir ve veritabanı ile birleşik bir yapısı vardır. Java'ya benzediği için Java bilen birisi için kullanımı çok kolaydır. Hatta bazen dikkatli bir şekilde yazıldığında kodlar Java platformunda bile çalışabilir. Bunun örneğini ilerde vereceğim. Ama şimdi konumuza devam edelim.
+Bugün Apex'in temellerini anlatacağım. Apex Salesforce'da kullanılan Java benzeri bir programlama dilidir. Sistem olaylarına business logic eklenmesini sağlar. Bunlar butona basma, insert/update edilen kayıtlarla ilgili olaylar ya da Visualforce sayfaları olabilir. Apex Force.com platformunda yani sunucu tarafında kaydedilir, derlenir ve çalıştırılır. Nesneye yöneliktir ve veritabanı ile birleşik bir yapısı vardır. Java'ya benzediği için Java bilen birisi için kullanımı çok kolaydır. Hatta bazen dikkatli bir şekilde yazıldığında kodlar Java platformunda bile çalışabilir. Bunun örneğini ilerde vereceğim. Ama şimdi konumuza devam edelim.
 
 Apex'te yeni bir liste tanımlamak istersek bunu şu şekilde yapabiliriz.
 
@@ -25,7 +25,7 @@ for(Integer i = 0; i < stringListe.size(); i++){
 }
 {% endhighlight %}
 
-Görüldüğü gibi oldukça Java benzeri(aynısı) bir yapı var. Apex'te iki farklı koleksiyon tipi daha var. Biri Set diğeri ise Map. İşe ilk başladığımda Apex öğrenirken Map kullanmamak konusunda direniyordum ve Mustafa öğrendikten sonra çok seveceğimi söyleyip duruyordu. Haklıymış, Map gerçekten harika bir yapı. Özellikle birden fazla nesneyi birbirine bağlayarak iş yapmanız gerekiyorsa gereksiz for yapılarından kurtuluyorsunuz. Basit bir Map tanıtımı aşağıdaki gibi.
+Görüldüğü gibi oldukça Java benzeri(aynısı) bir yapı var. Apex'te iki farklı koleksiyon tipi daha var. Biri Set diğeri ise Map. İşe ilk başladığımda Apex öğrenirken Map kullanmamak konusunda direniyordum ve Mustafa öğrendikten sonra çok seveceğimi söyleyip duruyordu. Haklıymış, Map gerçekten harika bir yapı. Özellikle birden fazla nesneyi birbirine bağlayarak iş yapmanız gerekiyorsa gereksiz for yapılarından kurtuluyorsunuz. Basit bir Map tanımı aşağıdaki gibi.
 
 {% highlight java %}
 Map<String, String> stringMap = new Map<String, String>();
@@ -33,7 +33,7 @@ stringMap.put('anahtar', 'değer');
 system.debug(stringMap.get('anahtar')); //bu loglara değer ifadesini yazacaktır.
 {% endhighlight %}
 
-Apex'te temel veri tipleri bulunmaklar beraber hem sistemde tanımlı nesneleri hem de sınıf olarak tanımlayacağınız nesneleri veri tipi olarak kullanabiliyorsunuz.
+Apex'te temel veri tipleri bulunmakla beraber hem sistemde tanımlı nesneleri hem de sınıf olarak tanımlayacağınız nesneleri veri tipi olarak kullanabiliyorsunuz.
 
 Bugünlük Apex bu kadar. Bu konuyu daha detaylı olarak sonra anlatmaya devam edeceğim.
 
