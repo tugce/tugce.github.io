@@ -34,10 +34,10 @@ global class CloseOpps{
 2. Yan sekmeden Customize -> Accounts -> Buttons,Links and Actions kısmını seçin ve New Button and Link butonuna tıklayın.
 3. Label kısmına Opportunity Closed Won yazın.
 4. Display Type için Detail Page Button kısmını seçin.
-5. Davranış kısmına Execute Javascript seçiyoruz.
-6. Content Source için Execute Javascript seçiyoruz.
+5. Davranış kısmına Execute Javascript seçin.
+6. Content Source için Execute Javascript seçin.
 
-Şu Javascript kodunu text alana yazıyoruz.
+Şu Javascript kodunu text alana yazalım.
 {% highlight javascript %}
 {!REQUIRESCRIPT("/soap/ajax/29.0/connection.js")}
 {!REQUIRESCRIPT("/soap/ajax/29.0/apex.js")}
@@ -47,7 +47,7 @@ else alert("Hiç Opportunity yok.")
 window.location.reload();
 {% endhighlight %}
 
-Sonrasında bu butonu page layouta eklersek tıkladığımız zaman o Account kaydına bağlı tüm Opportunitylerin Closed Won olduğunu göreceğiz.
+Sonrasında bu butonu page layouta eklersek her şey tamamdır. Herhangi bir Account kaydına gidip butona tıkladığımız zaman o Account kaydına bağlı tüm Opportunitylerin Closed Won olduğunu göreceğiz.
 
 <img src="http://ztugcesirin.com/assets/sfss1.PNG"/>
 
