@@ -7,7 +7,7 @@ categories: salesforce apex programming
 
 Merhaba Dünya!
 
-Bugün size yine Apex dilinden bahsedeceğim. Aslında bu benimde yeni keşfettiğim bir şey. Daha önce nasıl keşfetmedim bilmiyorum yani o kadar temel bir konu ki aslında Allah belamı bile verebilir ama bilmiyordum işte. Neyse hep birlikte öğrenelim.
+Bugün size yine Apex dilinden bahsedeceğim. Aslında bu benimde yeni keşfettiğim bir şey. Daha önce nasıl keşfetmedim bilmiyorum yani o kadar temel bir konu ki aslında ama bilmiyordum işte. Neyse hep birlikte öğrenelim.
 
 Temel olarak yapacağım şey Salesforce'da bir nesneye custom bir buton eklemek. Diyelim ki bir Account kaydı üzerinde butona tıkladığımızda o Account'a ait tüm Opportunity'ler Closed Won aşamasına getirilsin. Şimdi sınıfımızı yazalım.
 {% highlight java %}
