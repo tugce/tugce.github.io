@@ -49,6 +49,8 @@ window.location.reload();
 
 Sonrasında bu butonu page layouta eklersek her şey tamamdır. Herhangi bir Account kaydına gidip butona tıkladığımız zaman o Account kaydına bağlı tüm Opportunitylerin Closed Won olduğunu göreceğiz.
 
+<img src="http://ztugcesirin.com/assets/sfss2.PNG"/>
+<img src="http://ztugcesirin.com/assets/sfss3.PNG"/>
 <img src="http://ztugcesirin.com/assets/sfss1.PNG"/>
 
 <div id="disqus_thread"></div>
