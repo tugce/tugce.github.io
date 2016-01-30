@@ -56,6 +56,14 @@
             RSS
         </a>
     </li>
+    <li>
+        <a title="Categories via RSS" 
+            href="{{ '/feed.category.xml' | prepend: site.baseurl | prepend: site.url }}"
+            class="rss wc-img-replace" target="_blank">
+            RSS
+        </a>
+    </li>
+
 
 </ul>
 {% endcapture %}{{ social_media_li | strip_newlines }}
