@@ -11,8 +11,8 @@ Bugün bazılarınızın şaşırabileceği bir şekilde yine ve yeniden Salesfo
 
 Bir Apex çağrısı Apex kodunuzu dışardaki bir servisle bağlamanızı sağlar. Çağrı Apex kodundan dışardaki web servise çağrı yapar ya da HTTP isteği gönderir ve karşılık olarak bir response alır. Bu iki şekilde olabilir.
 
-1. XML kullanan SOAP çağrıları. Genelde kod oluşturmak için bir WSDL belgesine ihtiyaç duyar. </br>
-2. Genelde JSON kullanan REST HTTP istekleri </br>
+1. XML kullanan SOAP çağrıları. Genelde kod oluşturmak için bir WSDL belgesine ihtiyaç duyar.
+2. Genelde JSON kullanan REST HTTP istekleri
 
 Bunlar servise istek yapma ve yanıt alma konusunda birbirine benzese bile WSDL tabanlı çağrılar SOAP web servisleriyken HTTP çağrıları SOAP ya da REST kullanan herhangi bir HTTP servisi olabilir.
 
