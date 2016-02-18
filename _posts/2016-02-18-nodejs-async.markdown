@@ -7,6 +7,7 @@ categories: nodejs JavaScript programming async
 
 Merhabalar,
 Bugün Node.js'de kullanılabilen async modülünden bahsedeceğim. Async modülü 20 civarı asenkron fonksiyon içeriyor fakat bu yazımda sadece 4 tanesini (series, parallel, forever, waterfall) açıklayıp kod örnekleri ile detaylandırmaya çalışacağım.
+
 <b>series:</b> async.series görevlerin olduğu bir dizide her bir görev kendisinden önce gelen tamamlandıysa çalışır. Eğer serideki herhangi bir fonksiyon callback fonksiyonuna hata (error) dönerse kalan fonksiyonlar çalıştırılmaz. series fonksiyonunu birbirine bağlı <i>olan</i> bir dizi görev varsa ve bu görevler bittikten sonra bir işlem yapılması gerekiyorsa kullanmalıyız.
 
 {% highlight javascript %}
@@ -38,7 +39,7 @@ async.series(
     }
 );
 
---Çıktısı--
+--Sonuc--
 4
 9
 error
@@ -75,7 +76,7 @@ async.parallel(
     }
 );
 
---Çıktısı--
+--Sonuc--
 4
 9
 error
@@ -97,7 +98,7 @@ var async = require('async');
 
 async.waterfall([
     function(callback) {
-        console.log("ilk islem yapıldı");
+        console.log("ilk islem yapildi");
         callback(null, 'dosya');
     },
     function(arg1, callback) {
@@ -112,8 +113,8 @@ async.waterfall([
         console.log(result);
 });
 
---Çıktısı--
-ilk islem yapıldı
+--Sonuc--
+ilk islem yapildi
 dosya
 degisken
 final
