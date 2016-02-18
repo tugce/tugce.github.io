@@ -93,6 +93,30 @@ error
 <b>waterfall:</b> async.waterfall fonksiyonu fonksiyonlardan oluşan bir görev dizisini çalıştırır ve her bir fonksiyon sonucunu dizide bir sonra gelen fonksiyona gönderir. Ama herhangi bir fonksiyon callbackine hata değeri gönderirse sıradaki fonksiyon çağrılmaz ve ana callback hata değeri ile çağrılır. async.waterfall fonksiyonu kendisinden bir önceki fonksiyonun sonucu ile işlemler yapacak işlemler için kullanılır.
 
 {% highlight javascript %}
+var async = require('async');
+
+async.waterfall([
+    function(callback) {
+        console.log("ilk islem yapıldı");
+        callback(null, 'dosya');
+    },
+    function(arg1, callback) {
+        console.log(arg1);
+        callback(null, 'degisken');
+    },
+    function(arg1, callback) {
+        console.log(arg1);
+        callback(null, 'final');
+    }
+], function (err, result) {
+        console.log(result);
+});
+
+--Çıktısı--
+ilk islem yapıldı
+dosya
+degisken
+final
 
 {% endhighlight %}
 
