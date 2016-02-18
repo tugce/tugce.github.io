@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Node.js Async (5)"
-date:   2016-02-18 10:00:00
+title:  "Node.js Async"
+date:   2016-02-18 08:00:00
 categories: nodejs JavaScript programming async
 ---
 
