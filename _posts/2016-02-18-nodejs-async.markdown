@@ -8,10 +8,89 @@ categories: nodejs JavaScript programming async
 Merhabalar,
 Bugün Node.js'de kullanılabilen async modülünden bahsedeceğim. Async modülü 20 civarı asenkron fonksiyon içeriyor fakat bu yazımda sadece 4 tanesini (series, parallel, forever, waterfall) açıklayıp kod örnekleri ile detaylandırmaya çalışacağım.
 <b>series:</b> async.series görevlerin olduğu bir dizide her bir görev kendisinden önce gelen tamamlandıysa çalışır. Eğer serideki herhangi bir fonksiyon callback fonksiyonuna hata (error) dönerse kalan fonksiyonlar çalıştırılmaz. series fonksiyonunu birbirine bağlı <i>olan</i> bir dizi görev varsa ve bu görevler bittikten sonra bir işlem yapılması gerekiyorsa kullanmalıyız.
-<b>parallel:</b> async.parallel fonksiyonunda dizideki görevler bir öncekinin bitmesini beklemeden çalışır. Bütün görevler bittiğinde yanıtlar final callbacke dizi olarak gönderilir. async.parallel fonksiyonunu birbirine bağlı <i>olmayan</i> bir dizi görev varsa ve bu görevler bittikten sonra bir işlem yapılması gerekiyorsa kullanmalıyız.
-<b>forever:</b> async.forever fonksiyonu asenkron f(n) fonksiyonunu kendisini tekrar çağırmasını sağlayan callback parametresi ile çağırır. Bunu async.series fonksiyonunun sonsuza kadar çalışan hali olarak düşünebiliriz. Eğer callbacke hata gönderilirse çalışma durur.
-<b>waterfall:</b> async.waterfall fonksiyonu fonksiyonlardan oluşan bir görev dizisini çalıştırır ve her bir fonksiyon sonucunu dizide bir sonra gelen fonksiyona gönderir. Ama herhangi bir fonksiyon callbackine hata değeri gönderirse sıradaki fonksiyon çağrılmaz ve ana callback hata değeri ile çağrılır. async.waterfall fonksiyonu kendisinden bir önceki fonksiyonun sonucu ile işlemler yapacak işlemler için kullanılır.
 
+{% highlight javascript %}
+var async = require('async');
+
+var squareOfNumber = function (number, callback) {
+    square = number * number;
+    console.log(square);
+    if (square == 9) callback("error");
+    else callback();
+    return square;
+
+};
+
+async.series(
+    [
+        function(callback){
+            squareOfNumber(2,callback);
+        },function(callback){
+            squareOfNumber(3,callback);
+        },function(callback) {
+            squareOfNumber(4, callback);
+        }
+    ], function(err){
+        if(err){
+            console.log(err);
+            return err;
+        }
+    }
+);
+
+--Çıktısı--
+4
+9
+error
+{% endhighlight %}
+
+<b>parallel:</b> async.parallel fonksiyonunda dizideki görevler bir öncekinin bitmesini beklemeden çalışır. Bütün görevler bittiğinde yanıtlar final callbacke dizi olarak gönderilir. async.parallel fonksiyonunu birbirine bağlı <i>olmayan</i> bir dizi görev varsa ve bu görevler bittikten sonra bir işlem yapılması gerekiyorsa kullanmalıyız.
+
+{% highlight javascript %}
+var async = require('async');
+
+var squareOfNumber = function (number, callback) {
+    square = number * number;
+    console.log(square);
+    if (square == 9) callback("error");
+    else callback();
+    return square;
+
+};
+
+async.parallel(
+    [
+        function(callback){
+            squareOfNumber(2,callback);
+        },function(callback){
+            squareOfNumber(3,callback);
+        },function(callback) {
+            squareOfNumber(4, callback);
+        }
+        ], function(err){
+        if(err){
+            console.log(err);
+            return err;
+        }
+    }
+);
+
+--Çıktısı--
+4
+9
+error
+16
+
+
+{% endhighlight %}
+
+<b>forever:</b> async.forever fonksiyonu asenkron f(n) fonksiyonunu kendisini tekrar çağırmasını sağlayan callback parametresi ile çağırır. Bunu async.series fonksiyonunun sonsuza kadar çalışan hali olarak düşünebiliriz. Eğer callbacke hata gönderilirse çalışma durur.
+
+{% highlight javascript %}
+
+{% endhighlight %}
+
+<b>waterfall:</b> async.waterfall fonksiyonu fonksiyonlardan oluşan bir görev dizisini çalıştırır ve her bir fonksiyon sonucunu dizide bir sonra gelen fonksiyona gönderir. Ama herhangi bir fonksiyon callbackine hata değeri gönderirse sıradaki fonksiyon çağrılmaz ve ana callback hata değeri ile çağrılır. async.waterfall fonksiyonu kendisinden bir önceki fonksiyonun sonucu ile işlemler yapacak işlemler için kullanılır.
 
 {% highlight javascript %}
 
