@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Certified Force.com Developer
   Junior Linux System Administrator
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ztugcesirin.github.io" # the base hostname & protocol for your site
+url: "http://tugce.github.io" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Tuğçe Şirin"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
