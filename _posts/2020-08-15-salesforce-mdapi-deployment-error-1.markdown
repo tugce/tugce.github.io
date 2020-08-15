@@ -71,6 +71,8 @@ Notice how name changed from <b>Thread_Id</b> to <i>Case.Thread_Id</i>
 
 And if we try to deploy this package we have the error from the title: <b>In field: name - no WorkflowFieldUpdate named Case.Case.Thread_Id found</b>
 
+I've noticed that Case.Case... was not looking right and after checking the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_entitlementprocess.htm">sample metadata file</a> from Salesforce documentation I've noticed extra sobject name in front of the WorkflowFieldUpdate.
+
 This issue is not documented anywhere except <a href="https://trailblazer.salesforce.com/issues_view?id=a1p30000000T0oHAAS&title=deployments-of-approval-process-with-workflow-field-updates-throw-error-stating-that-the-workflow-field-update-doesn-t-exist-for-that-sobject">a similar old known issue</a> that was fixed in Spring 14.
 
 <b>Workaround</b>
